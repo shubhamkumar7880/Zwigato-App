@@ -1,0 +1,38 @@
+.container {
+    position: relative; 
+  }
+  
+  /* CSS for the background image */
+  .container::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5); 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    z-index: 2; 
+  }
+
+  .content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    font-weight: bolder;
+  }
+
+  .content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    width: 110%;
+  }
